@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--switchButton定义的属性-->
+    <declare-styleable name="SwitchButton">
+        <attr name="switchOpenDrawable" format="reference" />
+        <attr name="switchCloseDrawable" format="reference" />
+        <attr name="switchStatus">
+            <enum name="open" value="1" />
+            <enum name="close" value="0" />
+        </attr>
+    </declare-styleable>
+    <!--双向选择的属性-->
+    <declare-styleable name="DoubleSeekView">
+        <attr name="seek_bg_color" format="color" />
+        <attr name="seek_pb_color" format="color" />
+        <attr name="seek_ball_solid_color" format="color" />
+        <attr name="seek_ball_stroke_color" format="color" />
+        <attr name="seek_text_color" format="color" />
+        <attr name="seek_text_size" format="dimension" />
+        <attr name="seek_ball_image" format="reference"/>
+        <attr name="seek_bar_isTwoDrag" format="boolean"/>
+    </declare-styleable>
+</resources>
