@@ -13,8 +13,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import wxz.android.commonviews.views.DraggableSquareView;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private DraggableSquareView draggableSquareView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +44,17 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        draggableSquareView = (DraggableSquareView) findViewById(R.id.dsv_image);
+        addImages();
+    }
+
+    private void addImages() {
+        draggableSquareView.fillItemImageRes(0, R.drawable.a1,false);
+        draggableSquareView.fillItemImageRes(0,R.drawable.a2,false);
+        draggableSquareView.fillItemImageRes(0,R.drawable.a3,false);
+        draggableSquareView.fillItemImageRes(0,R.drawable.a4,false);
+        draggableSquareView.fillItemImageRes(0,R.drawable.a5,false);
+        draggableSquareView.fillItemImageRes(0,R.drawable.a6,false);
     }
 
     @Override

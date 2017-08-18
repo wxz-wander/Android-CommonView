@@ -20,4 +20,13 @@
         <attr name="seek_ball_image" format="reference"/>
         <attr name="seek_bar_isTwoDrag" format="boolean"/>
     </declare-styleable>
+
+    <!--六边形-->
+    <declare-styleable name="HexagonView">
+        <attr name="text" format="string"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="backColor" format="color"/>
+        <attr name="src" format="reference"/>
+    </declare-styleable>
 </resources>

@@ -15,6 +15,7 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        mavenCentral() // jcenter() works as well because it pulls from Maven Central
     }
 }
 
